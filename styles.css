@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --one: white;
+    --two: #F3F3F3;
+    --three: rgb(85, 85, 85);
+    --four: rgb(66, 66, 66);
+}
+
+::selection {
+    background-color: var(--three);
+    color: var(--one);
+}
+
+body {
+    width: 100%;
+    background-color: var(--two);
+    color: var(--four);
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 1em auto;
+    padding: 2em;
+    width: 70%;
+    max-width: 700px;
+    min-width: 210px;
+}
+
+#title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+#description {
+    text-align: center;
+    font-size: 1rem;
+}
+
+#name-label,
+#email-label,
+#number-label,
+.dropdown,
+#recommend,
+#like,
+.checkbox,
+.textarea {
+    margin: .5em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+select {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select option {
+    color: var(--four);
+}
+
+.recommend,
+.checkbox {
+    margin: .5em 0;
+    border-radius: 10px;
+    padding: .5em;
+    display: block;
+    width: 100%;
+    background-color: var(--one);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#dropdown2,
+#textarea {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    width: 100%;
+    resize: none;
+}
+
+#submit {
+    margin: .5em 0;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: .5em;
+    width: 100%;
+    background-color: var(--four);
+    color: var(--one);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+    #description {
+        font-size: .8rem;
+    }
+
+    #name-label,
+    #email-label,
+    #number-label,
+    .dropdown,
+    #recommend,
+    #like,
+    .checkbox,
+    .textarea {
+        font-size: .8rem;
+    }
+}
